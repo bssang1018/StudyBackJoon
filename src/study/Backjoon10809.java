@@ -2,7 +2,7 @@ package study;
 
 import java.util.Scanner;
 
-public class Main2 {
+public class Backjoon10809 {
 
 	public static void main(String[] args) {
 		

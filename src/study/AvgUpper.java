@@ -32,6 +32,7 @@ public class AvgUpper {
 			}
 			
 			System.out.println(String.format("%.3f%%",(float)count/s*100)); //0케이스의 마지막에서 출력해주고
+			
 			//1케이스 작업을 똑같이 다시하러 간다.
 		}
 		
