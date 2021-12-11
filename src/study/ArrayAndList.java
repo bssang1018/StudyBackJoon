@@ -2,8 +2,11 @@ package study;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Queue;
 import java.util.Stack;
 
@@ -71,6 +74,28 @@ public class ArrayAndList {
 			System.out.println(queue.poll());
 			//가장 먼저 들어간 0부터 출력됨
 		}
+		
+		//=======================================
+		
+		//Hashtable
+		Map<String, Integer> ht = new Hashtable<String, Integer>();
+		
+		ht.put("a", 1);
+		ht.put("b", 2);
+		ht.put("c", 3);
+		
+		//이미 있는 키를 다시 사용하면?
+		ht.put("c", 4);
+		System.out.println(ht.get("c"));//4
+		//값이 덮어 씌워짐
+		
+		//없는 키의 값을 찾으면?
+		System.out.println(ht.get("d"));//null
+		//null
+		
+		
+		
+		
 		
 		
 	}
