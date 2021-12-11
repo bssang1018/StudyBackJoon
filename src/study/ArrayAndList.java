@@ -77,7 +77,8 @@ public class ArrayAndList {
 		
 		//=======================================
 		
-		//Hashtable
+		//Hashtable :: 동기화를 지원해서 멀티 스레드 상황에서 안전하다
+		//단일 스레드에서는 HashMap의 성능이 좋다
 		Map<String, Integer> ht = new Hashtable<String, Integer>();
 		
 		ht.put("a", 1);
@@ -93,7 +94,10 @@ public class ArrayAndList {
 		System.out.println(ht.get("d"));//null
 		//null
 		
-		
+		//keySet() :: 모든 키 가져오기 
+		for (String key : ht.keySet()) {
+			System.out.println(key +  " : " + ht.get(key));
+		}
 		
 		
 		
