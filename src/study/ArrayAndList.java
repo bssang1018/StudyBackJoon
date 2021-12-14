@@ -27,13 +27,24 @@ public class ArrayAndList {
 		//=======================================
 		
 		//리스트 선언 하기
-		List<String > list1 = new ArrayList<String>();
+		List<String> list1 = new ArrayList<String>();
 		list1.add("a");
 		list1.add("b");
 		list1.add("c");
 		
 		//리스트는 그냥 찍어짐
 		System.out.println(list1);
+		System.out.println("List:: "+list1.get(1));
+		//index로 값을 가져올 수 있으나, 이 인덱스는 절대적인 값이 아님.
+		
+		ArrayList<String> arrList = new ArrayList<String>();
+		arrList.add("a");
+		arrList.add("b");
+		arrList.add("c");
+		
+		arrList.get(1);
+		System.out.println("arrayList:: "+arrList.get(1));
+		//index로 값을 가져올 수 있으나, 이 인덱스는 절대적인 값이 아님.
 		
 		//=======================================
 		
